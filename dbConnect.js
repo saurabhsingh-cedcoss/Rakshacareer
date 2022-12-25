@@ -43,7 +43,7 @@ const mongoose = require("mongoose");
 const dbUrl =
   "mongodb+srv://HimanshuJS:HimanshuJS@cluster0.bxbjkfd.mongodb.net/feeManager?retryWrites=true&w=majority";
 
-await mongoose.connect(dbUrl, { useNewUrlParser: true });
+mongoose.connect(dbUrl, { useNewUrlParser: true });
 const con = mongoose.connection;
 con.on("open", async () => {
   console.log("db Connected");
