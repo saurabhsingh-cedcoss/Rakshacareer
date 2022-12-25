@@ -57,9 +57,7 @@ app.use("/sendSms", sendSmsRoute);
 
 app.use("/submitFee", feeSubmit);
 
-app.get("/", (req, res) => {
-  res.send("hello himanshu");
-});
+
 
 if(process.env.NODE_ENV=='production'){
   const path=require('path')
