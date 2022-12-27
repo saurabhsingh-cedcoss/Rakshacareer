@@ -4,7 +4,10 @@
   "description": "A private app that can manage fee of students",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "client": "npm start --prefix react-client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "run dev",
+    "start": "node server"
   },
   "author": "Himanshu Mishra",
   "license": "ISC",
